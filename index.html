@@ -1,11 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natures Platter</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .sora-font {
+            font-family: "Sora", sans-serif;
+        }
+
+        .adlam-display-font {
+            font-family: "ADLaM Display", system-ui;
+        }
+    </style>
 </head>
-<body>
-    <h1>welcome</h1>
+
+<body class="sora-font">
+    <header class="bg-linear-to-b from-white-500 to-[#EFEBE3]">
+        <nav class="max-w-[1320px] mx-auto mb-22">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="hidden md:block" href="#home"><img src="./assets/logo-header.png" alt=""></a>
+                    <a class="md:hidden" href="#home"><img src="./assets/logo-footer.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-xl" href="#home">Home</a></li>
+                        <li><a class="text-xl" href="#service">Service</a></li>
+                        <li><a class="text-xl" href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div class="space-x-5 hidden lg:block">
+                        <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <button class="btn border-1 border-[#179800] text-xl">LogIn</button>
+                        <button class="btn bg-[#179800] text-xl text-white">Register</button>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="#179800">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="max-w-[825px] mx-auto text-center space-y-8">
+                <h1 class="text-5xl font-semibold">Freshness <span class="text-[#179800]">You Can <br> Count</span> On,
+                    Prices You’ll Love!</h1>
+                <p class="text-lg">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+                    staples, we’ve got you covered every day!</p>
+            </div>
+        </div>
+        <div>
+            <img class="w-full mx-auto" src="./assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+    <main>
+        <!-- service section -->
+        <div class="max-w-[1320px] mx-auto my-25 px-5 lg:px-0">
+            <h1 class="text-4xl font-semibold text-[#179800] mb-10">Service</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- cart 1 -->
+                <div class="card bg-base-100 max-w-96 shadow-sm bg-[#EFEBE3] py-8 mx-auto">
+                    <div class=" mx-auto ">
+                        <figure class="w-30 h-30 bg-white rounded-full p-4">
+                            <img src="./assets/service.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">24/7 Services</h2>
+                        <p class="text-xl font-light">Our 24/7 services ensure round-the-clock assistance, offering
+                            reliability, quick solutions, and support anytime, day or night, without interruptions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- cart 2 -->
+                <div class="card bg-base-100 max-w-96 shadow-sm bg-[#EFEBE3] py-8 mx-auto">
+                    <div class=" mx-auto ">
+                        <figure class="w-30 h-30 bg-white rounded-full p-4">
+                            <img src="./assets/delivery.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Fast Delivery</h2>
+                        <p class="text-xl font-light">Enjoy our fast delivery service, ensuring your products arrive
+                            quickly, safely, and on time, bringing convenience and satisfaction to every order.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- cart 3 -->
+                <div class="card bg-base-100 max-w-96 shadow-sm bg-[#EFEBE3] py-8 mx-auto">
+                    <div class=" mx-auto ">
+                        <figure class="w-30 h-30 bg-white rounded-full p-4">
+                            <img src="./assets/healthy.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Healthy Products</h2>
+                        <p class="text-xl font-light">We provide healthy products made with natural ingredients,
+                            ensuring freshness, quality, and nutrition to support your wellness and balanced lifestyle
+                            daily.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popular product section -->
+        <div class="bg-[#EFEBE3] px-5 py-10 lg:py-36">
+            <div class="max-w-[1320px] mx-auto">
+                <h1 class="text-4xl font-semibold text-[#179800] mb-12">Popular Products</h1>
+                <div class="lg:flex gap-6">
+                    <div
+                        class="lg:w-2/6 space-y-5 p-10 h-[400px] bg-radial-[at_25%_25%] from-[#179800] to-white relative rounded-xl">
+                        <h1 class="adlam-display-font text-3xl text-white">30% Off</h1>
+                        <p class="text-base text-[#111111]">discover a world of treats toys, and essential handpicked
+                            for</p>
+                        <button class="btn bg-white text-xl">Buy Now</button>
+                        <div class="absolute bottom-0 right-0">
+                            <img class="" src="./assets/vegetable-offer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:w-4/6 grid grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center p-4 gap-4 rounded-xl">
+                            <div class="bg-[#EFEBE3] rounded-lg">
+                                <img src="./assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <div class="rating rating-xs flex items-center gap-2"><input type="radio"
+                                        class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked">4.5
+                                </div>
+                                <h1 class="text-xs lg:text-xl font-semibold">onion 1kg</h1>
+                                <h2 class="text-xs">$ 39.99</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- arrival & offer section -->
+        <div class="max-w-[1320px] mx-auto my-25 px-4 lg:px-0">
+            <h1 class="text-4xl font-semibold text-[#179800] mb-12">Arrival & Offers</h1>
+            <div class="lg:flex gap-5 space-y-5 lg:space-y-0">
+                <div class="w-full lg:w-3/5 bg-[#115414] flex  justify-center items-center rounded-2xl p-3 lg:p-0">
+                    <div class=" w-2/4 lg:p-5 space-y-5">
+                        <img src="./assets/dawat-logo.png" alt="">
+                        <h1
+                            class="bg-[#63B76D] h-16 max-w-80 rounded-xl flex justify-center items-center text-2xl poppins-font text-white">
+                            Cook Exotic Dishes</h1>
+                        <h1 class="text-3xl md:text-4xl text-white">UP to <span class="font-bold">20% OFF</span></h1>
+                    </div>
+                    <img class="w-2/4" src="./assets/dawat-mock-up.png" alt="">
+                </div>
+                <div class="w-full lg:w-2/5 bg-[#102861] flex  justify-center items-center rounded-2xl p-3 lg:p-0">
+                    <div class="w-2/4 lg:p-5 space-y-5">
+                        <img src="./assets/india-gate-logo.png" alt="">
+                        <h1
+                            class="bg-[#2A4D97] h-16 max-w-80 rounded-xl flex justify-center items-center text-2xl poppins-font text-white">
+                            Cook Exotic Dishes</h1>
+                        <h1 class="text-3xl md:text-4xl text-white">UP to <span class="font-bold">20% OFF</span></h1>
+                    </div>
+                    <img class="w-2/4" src="./assets/india-gate-mock-up.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
